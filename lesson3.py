@@ -16,12 +16,14 @@ def example1():
 
 def example2():
     print("Example2: To which number should I count?")
-    num = int(input())
+    start = 1
+    end = int(input())
+    step = 1
 
-    for i in range(num):    # Range method starts from 0 until < x.
+    for i in range(start, end, step):    # Range method counts until 'i < end'.
         print(i)            # range (3) will give you 0, 1, 2
 
-    # Question: How would you fix it that it prints 1, 2, 3 instead of 0, 1, 2?
+    # Question: How would you change it to include the ending number?
 
 
 if __name__ == "__main__":
